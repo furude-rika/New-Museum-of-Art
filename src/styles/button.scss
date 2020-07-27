@@ -14,7 +14,7 @@
   &--orange {
     background-color: $mainOrangeColor;
 
-    &link,
+    &:link,
     &:visited,
     &:active {
       color: $headerWhiteColor;
@@ -32,7 +32,7 @@
     background-color: $mainGreenColor;
     border: 1px solid $headerWhiteColor;
 
-    &link,
+    &:link,
     &:visited,
     &:active {
       color: $headerWhiteColor;
