@@ -1,0 +1,26 @@
+.circles {
+
+  display: grid;
+  grid-template-columns: repeat(3, 9px);
+  grid-column-gap: 12px;
+  justify-content: center;
+
+  &__circle {
+    $circleWidth: 9px;
+
+    width: $circleWidth;
+    height: $circleWidth;
+    border-radius: $circleWidth / 2;
+    background-color: $mainGreenColor;
+    opacity: 0.3;
+  }
+
+  &__circle--active {
+    background-color: $mainGreenColor;
+    opacity: 1;
+  }
+
+  @media (min-width: 450px) {
+    display: none;
+  }
+}

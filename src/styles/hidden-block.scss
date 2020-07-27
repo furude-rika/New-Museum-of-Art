@@ -5,24 +5,37 @@
     font-weight: 200;
   }
 
-  &__titles {
+  &__links {
     display: grid;
     grid-row-gap: 40px;
     margin-top: 80px;
   }
 
-  &__title-1,
-  &__title-2,
-  &__title-3 {
+  &__link-1,
+  &__link-2,
+  &__link-3 {
     font-family: Playfair Display, sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 100%;
+    transition: color 0.5s;
+
+    &:link,
+    &:visited,
+    &:active {
+      color: $headerWhiteColor;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: $hoverButtonColor;
+      text-decoration: none;
+    }
   }
 
   &__line {
     opacity: 0.3;
-    background-color: $mainWhiteColor;
+    background-color: $headerWhiteColor;
   }
 
   &__buttons {
@@ -56,14 +69,14 @@
       margin-top: 30px;
     }
 
-    &__titles {
+    &__links {
       margin-top: 55px;
       grid-row-gap: 50px;
     }
 
-    &__title-1,
-    &__title-2,
-    &__title-3 {
+    &__link-1,
+    &__link-2,
+    &__link-3 {
       font-size: 48px;
       line-height: 120%;
     }
@@ -105,9 +118,9 @@
       grid-row-gap: 60px;
     }
 
-    &__title-1,
-    &__title-2,
-    &__title-3 {
+    &__link-1,
+    &__link-2,
+    &__link-3 {
       font-size: 3rem;
       line-height: 120%;
     }
@@ -123,11 +136,11 @@
 
     &__img-holder {
       position: absolute;
-      bottom: -58px;
+      bottom: -150px;
       right: 0;
       width: 624px;
       height: 800px;
-      background: url("../images/header-hidden.png") no-repeat center;
+      background: url("../images/header/header-hidden.png") no-repeat center;
       background-size: contain;
     }
   }

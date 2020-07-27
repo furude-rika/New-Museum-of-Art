@@ -1,0 +1,43 @@
+.underlined-info {
+
+  $elemHeight: 1rem;
+
+  display: grid;
+  grid-row-gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 100%;
+
+  &__link {
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: $titlesColor;
+      text-decoration: none;
+    }
+  }
+
+  &__line {
+    margin: 0;
+    width: 130px;
+    height: 1px;
+    background-color: $titlesColor;
+    opacity: 0.5;
+  }
+
+  @media (min-width: 1280px) {
+    grid-template-columns: 120px 70px;
+    grid-column-gap: 20px;
+    justify-content: end;
+    align-items: center;
+
+    &__line {
+      width: 70px;
+    }
+  }
+}

@@ -1,0 +1,125 @@
+.footer {
+
+  padding: 80px 20px 38px;
+  background-color: $mainGreenColor;
+  color: $headerWhiteColor;
+
+  &__container {
+    display: grid;
+    grid-row-gap: 60px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    @include titles(24px, 125%, $headerWhiteColor);
+  }
+
+  &__description {
+    @include descriptions(1rem, $headerWhiteColor);
+    opacity: 0.7;
+  }
+
+  &__contacts-description {
+    margin-bottom: 20px;
+  }
+
+  &__contacts-icons {
+    display: grid;
+    grid-template-columns: 10px 20px 22px 17px;
+    grid-column-gap: 20px;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__contacts-icon {
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__contacts-phone {
+    margin-left: 35px;
+  }
+
+  &__schedule-description {
+    display: grid;
+    grid-template-columns: 22px 94px;
+    grid-column-gap: 16px;
+  }
+
+  &__bottom-info {
+    margin-top: 40px;
+    display: grid;
+    justify-content: center;
+    opacity: 0.5;
+  }
+
+  @media (min-width: 500px) {
+
+    &__container {
+      grid-template-columns: repeat(2, 240px);
+      width: calc(240px * 2);
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    padding: 120px 0 35px;
+
+    &__container {
+      grid-template-columns: repeat(2, 240px);
+      margin-left: 99px;
+    }
+
+    &__bottom-info {
+      margin-top: 100px;
+      grid-template-columns: repeat(2, 130px);
+      grid-column-gap: 40px;
+    }
+  }
+
+  @media (min-width: 850px) {
+
+    &__container {
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: 1080px) {
+
+    padding: 120px 0 35px;
+
+    &__container {
+      grid-template-columns: repeat(3, 240px) 120px;
+      grid-column-gap: 60px;
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+
+      &__bottom-info {
+        margin-top: 100px;
+      }
+    }
+
+    &__about-us {
+      order: 1;
+    }
+  }
+
+  @media (min-width: 1280px) {
+
+    padding: 160px 0 60px;
+
+    &__container {
+      grid-template-columns: repeat(3, 240px) 120px;
+      grid-column-gap: 110px;
+    }
+
+    &__bottom-info {
+      margin-top: 77px;
+    }
+  }
+}

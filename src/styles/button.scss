@@ -7,10 +7,9 @@
   padding: 22px 0;
   font-size: 1rem;
   line-height: 100%;
-  color: $mainWhiteColor;
+  color: $headerWhiteColor;
   background-color: $mainOrangeColor;
   transition: box-shadow 0.5s;
-  text-decoration: none;
 
   &--orange {
     background-color: $mainOrangeColor;
@@ -18,36 +17,48 @@
     &link,
     &:visited,
     &:active {
-      color: $mainWhiteColor;
+      color: $headerWhiteColor;
       text-decoration: none;
     }
 
     &:hover {
       box-shadow: inset 280px 0 0 0 $hoverButtonColor;
-      color: $mainWhiteColor;
+      color: $headerWhiteColor;
       text-decoration: none;
     }
   }
 
   &--green {
     background-color: $mainGreenColor;
-    border: 1px solid $mainWhiteColor;
+    border: 1px solid $headerWhiteColor;
 
     &link,
     &:visited,
     &:active {
-      color: $mainWhiteColor;
+      color: $headerWhiteColor;
       text-decoration: none;
     }
 
     &:hover {
       box-shadow: inset 280px 0 0 0 $hoverButtonColor;
-      color: $mainWhiteColor;
+      color: $headerWhiteColor;
       text-decoration: none;
     }
   }
 
   @media (min-width: 768px) {
     width: 270px;
+  }
+
+  @media (min-width: 1920px) {
+    width: 400px;
+    font-size: 1.5rem;
+    padding: 42px 0;
+
+    &--hidden {
+      width: 280px;
+      font-size: 1rem;
+      padding: 22px 0;
+    }
   }
 }
