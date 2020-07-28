@@ -29,15 +29,21 @@
     width: 228px;
     margin-bottom: 80px;
     padding: 0 0 3px 10px;
+    font-family: Raleway, sans-serif;
     background-color: $mainOrangeColor;
     border: none;
     border-bottom: 1px solid $headerWhiteColor;
     opacity: 0.5;
     outline: none;
 
-    &::placeholder {
+    &::placeholder,
+    &:active {
       color: $headerWhiteColor;
     }
+  }
+
+  &__button {
+    visibility: hidden;
   }
 
   @media (min-width: 768px) {
