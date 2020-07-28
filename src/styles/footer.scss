@@ -1,5 +1,6 @@
 .footer {
 
+  position: relative;
   padding: 80px 20px 38px;
   background-color: $mainGreenColor;
   color: $headerWhiteColor;
@@ -43,6 +44,12 @@
     margin-left: 35px;
   }
 
+  &__arrow {
+    position: absolute;
+    top: 85px;
+    right: 20px;
+  }
+
   &__schedule-description {
     display: grid;
     grid-template-columns: 22px 94px;
@@ -78,6 +85,11 @@
       margin-top: 100px;
       grid-template-columns: repeat(2, 130px);
       grid-column-gap: 40px;
+    }
+
+    &__arrow {
+      top: 125px;
+      right: 30px;
     }
   }
 
@@ -120,6 +132,11 @@
 
     &__bottom-info {
       margin-top: 77px;
+    }
+
+    &__arrow {
+      top: 165px;
+      right: 50px;
     }
   }
 }
