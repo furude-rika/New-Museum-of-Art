@@ -18,6 +18,7 @@
   &__hidden-block {
     width: 100%;
     position: absolute;
+    top: 20px;
     right: 200%;
     background-color: $mainGreenColor;
     transition: all 0.5s;
