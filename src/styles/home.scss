@@ -1,0 +1,35 @@
+@import "_reset";
+@import "variables";
+@import "header";
+@import "hidden-block";
+@import "button";
+@import "exposition";
+@import "main";
+@import "underlined-info";
+@import "dates";
+@import "page-title";
+@import "event";
+@import "visit";
+@import "news";
+@import "circles";
+@import "subscribe";
+@import "footer";
+@import "nav";
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  background-color: $mainGreenColor;
+  padding: 20px 0 100px;
+
+  @media (min-width: 600px) {
+    padding-bottom: 180px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-bottom: 58px;
+  }
+}

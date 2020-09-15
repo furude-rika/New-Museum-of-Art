@@ -1,0 +1,13 @@
+.dates {
+  display: block;
+  @include titles(24px, 125%, $mainOrangeColor);
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
+    line-height: 120%;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 4rem;
+  }
+}

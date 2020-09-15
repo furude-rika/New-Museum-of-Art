@@ -1,0 +1,29 @@
+$mainGreenColor: #3f5252;
+$mainOrangeColor: #cd4d31;
+$headerWhiteColor: #f1f5f4;
+$hoverButtonColor: #eb8973;
+$titlesColor: #1c1b29;
+$descriptionColor: #504f5e;
+$topMainGap: 45px;
+
+@keyframes hiddenBlock {
+  0% {
+    transform: translateX(100%);
+  }
+}
+
+@mixin descriptions($fontSize, $color) {
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: $fontSize;
+  line-height: 150%;
+  color: $color;
+}
+
+@mixin titles($fontSize, $lineHeight, $color) {
+  font-family: Playfair Display, sans-serif;
+  font-size: $fontSize;
+  font-weight: 700;
+  line-height: $lineHeight;
+  color: $color;
+}

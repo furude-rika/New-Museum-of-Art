@@ -1,0 +1,16 @@
+.page-title {
+
+  width: 280px;
+  @include titles(36px, 125%, $titlesColor);
+
+  @media (min-width: 450px) {
+    width: 100%;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
+    line-height: 120%;
+    text-align: left;
+  }
+}
